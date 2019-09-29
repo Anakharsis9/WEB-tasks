@@ -1,0 +1,251 @@
+* {
+    font-size: 10px;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Berlin Sans FB";
+}
+main {
+    min-height: calc(100vh - 235px);
+    margin: 100px;
+}
+/* Header */
+header {
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+header > a img {
+    height: 60px;
+    margin-left: 10%;
+}
+header > ul {
+    list-style: none;
+    display: flex;
+    margin-left: 5%;
+    justify-content: space-around;
+    width: 50%;
+}
+header > ul li a {
+    font-size: 2em;
+    color: rgb(179, 178, 178);
+}
+header > ul li a:hover {
+    color: white;
+    cursor: pointer;
+}
+header > ul ul {
+    display: none;
+}
+header > div#search {
+    display: flex;
+}
+header > div#search > input {
+    border-radius: 15px;
+    padding: 3px;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 22px;
+}
+header > div#search > img {
+    margin-left: -25px;
+}
+header > div#basket {
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+}
+header > div#basket > span {
+    margin-left: 10px;
+   font-size: 1.6em;
+}
+header > div#account{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+header > div#account > span {
+    margin-left: 10px;
+    font-size: 1.3em;
+}
+
+/* End header */
+main #name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+main #name span:first-child{
+    margin-top: 30px;
+    font-size: 5em;
+}
+main #name span:last-child{
+    margin-top: 30px;
+    font-size: 4em;
+}
+main .container{
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+}
+main .categories{
+    display: flex;
+    flex-direction: column;
+}
+ main .categories span{
+     font-size: 1.7em;
+     margin-left: 30px;
+ }
+main .container ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    z-index: 1;
+
+}
+main .container ul li{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-size: 2em;
+    margin: 5px;
+    text-decoration: underline;
+}
+main .container ul li ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+main .container ul li ul li{
+    display: none;
+    width: 100%; 
+    z-index: 1;
+}
+main .container ul li:hover ul li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 500ms;
+    color: rgb(47, 77, 160);
+}
+
+main #sort {
+    display: flex;
+    flex-direction: column;
+}
+main #sort span{
+    font-size: 1.7em;
+    margin-left: 50px;
+}
+
+main .collec {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main .collec span{
+    padding: 10px;
+    font-size: 3em;
+    border: 2px solid black;
+}
+main  .photos {
+    margin-left: 80px;
+    z-index: 0;
+}
+main  .photos {
+    margin: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+main  .photos div {
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+main  .photos div div{
+    width: 260px;
+    height: 260px;
+    margin-right: 80px;
+}
+main  .photos div div div {
+    width: 260px;
+    height: 0px;
+    opacity: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+main  .photos div div div p {
+    font-size: 1.6em;
+    padding: 10px;
+    opacity: 0;
+}
+
+main  .photos div div:hover div{
+    width: 260px;
+    height: 260px;
+    opacity: 1;
+    cursor: pointer;
+}
+main  .photos div div:hover div p {
+    opacity: 1;
+}
+
+main  .photos div span{
+    font-size: 1.8em;
+    border: 0px;
+}
+
+main .promotions{ 
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+main .promotions div span{
+    color:brown;
+}
+
+main .promotions span{
+    margin-top: 30px;
+    font-size: 5em;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color:black;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+footer a{
+    color: white;
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+footer span{
+    color: white;
+    font-size: 1.3 em;
+}
+footer nav a:hover{
+    border-bottom: 1px solid white;
+    transition: 500ms;
+}
